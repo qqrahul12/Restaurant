@@ -25,7 +25,7 @@
 	
 	<link rel="stylesheet" href="css/card.css">
 	<link rel="stylesheet" href="css/button.css">
-	<script type="text/javascript" src="js/order.js"></script>
+	<script type="text/javascript" src="js/redirect.js" ></script>
 </head>
 <body style="background-color: #888888">
 	
@@ -41,10 +41,7 @@
 	    }
 	}
 ?>
-</div>
-<br>
-<div class="card">
-	
+<button type="submit" onclick="redirect('edit_menu.php')" >Edit Menu</button>
 </div>
 </body>	
 
