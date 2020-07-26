@@ -1,0 +1,36 @@
+.card{
+	background-color: #FF5555;
+	border-radius: 5px;
+	width: 60%;
+	margin-left: 19%;
+	text-align:center;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	float: center;
+	display: block;
+}
+
+.dish-name{
+	font-weight: bold;
+	font-size: 150%;	
+	margin-top: 0px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.dish-price {
+	display: inline-block;
+	font-weight: bold;
+	color: white;
+	margin-top: 0px;
+	margin-right: 25px;
+}
+
+.description{
+	margin-top: 20px;
+}
+table,tr,td,th {
+	text-align: left;
+	font-size: 105%;
+	border:1px solid white;
+}

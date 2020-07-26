@@ -1,0 +1,38 @@
+.right{
+    text-align: right;
+    margin: 10px;
+};
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+ /* background-image: url("../images/img6.jpg");*/
+ background-color: #888888;
+ float: center;
+}
+
+.vertispace {
+	margin-top: 20px
+}
+
+.login-box{
+    float:none;
+    margin: auto;
+    width: 50px 25%;
+    border: 3px blue;
+    padding: 10px;
+}
+
+.center{
+      text-align: center;
+}
+
+
+
+
+
+
+
