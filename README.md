@@ -1,4 +1,6 @@
 # Restaurant-Management System
+A very simple project. Everyone can easily understand.
+
 html+css+php+js+mysql+bootstrap
 
 I have used html,css,bootstrap and js for front end part.
