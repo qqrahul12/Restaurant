@@ -41,7 +41,8 @@
 	    }
 	}
 ?>
-<button type="submit" onclick="redirect('edit_menu.php')" >Edit Menu</button>
+<button type="submit" onclick="redirect('edit_menu.php')" >Edit Menu</button><br>
+<a href="admin_home.php">back to home</a>
 </div>
 </body>	
 
