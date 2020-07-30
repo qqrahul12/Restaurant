@@ -129,7 +129,7 @@
 	if($daily_orders!=0){	
 	echo '<tr>
 		<td>Average Order Amount</td>';
-	echo '<td>'.round($daily_order_amount/$daily_orders).'</td>';
+	echo '<td>'.round($daily_order_amount/$daily_orders,2).'</td>';
 	echo '</tr>';
 }
 	?>
