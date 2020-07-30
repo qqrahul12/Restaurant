@@ -39,7 +39,7 @@
 	<button onclick="redirect('bill.php')" type="submit">Create bill</button>
 	<hr>
 
-	<p>check all users list,block users,user stastics</p>
+	<p>check all users count,bookings,orders,user stastics</p>
 	<button onclick="redirect('manage_user.php')" type="submit">Manage users</button>
 	<hr>
 
