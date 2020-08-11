@@ -11,23 +11,13 @@
     if($con){
     	$id = $_SESSION["id"];
 
-    	$info = mysqli_query($con,"SELECT * from tables where curr_status=0 ");
-    	if($info->num_rows>=$count){
-			$empty = array();
-			$i = 0;
-			while($row= $info->fetch_assoc()){
-				$empty[$i]=$row['id'];
-				$i++;
-			}
-
-			for($i=0;$i<$count;$i++){
-
-				mysqli_query($con,"UPDATE tables SET curr_status=1,
-				user_id = $id where id=$empty[$i]");
-			}
+    	$info = mysqli_query($con,"SELECT avl_tables from vals");
+        $available = mysqli_fetch_row($info)[0];
+    	if($available>=$count){
 
 			mysqli_query($con,"INSERT into book_history(user_id,number_of_tables)
 					values($id,$count)");
+            mysqli_query($con,"UPDATE vals set avl_tables = $available-$count");
     	}
 
         else{
@@ -40,8 +30,11 @@
         }
 
     }
+    $info  = mysqli_query($con,"SELECT * from book_history order by id Desc limit 1");
+    $row = mysqli_fetch_row($info);
+    $_SESSION["dates"] = $row[3];
+    $_SESSION["book_id"] = $row[0];
+    $_SESSION["count"] = $count;
+    header("Location:customer_book_detail.php")
 
 ?>
-<p>table booked successfully</p>
-<p>visit RoyalCafe in the next 24 hours</p>
-<a  href="user_home.php" >back</a>
