@@ -29,6 +29,7 @@
 	$_SESSION["book_id"] = $book_id;
 	$_SESSION["user"] = $row[1];
 	$pending = $row[4];
+	$_SESSION["count"] = $row[2];
 	if($pending==0){
 		?>
 		<script type="text/javascript">
