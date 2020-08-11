@@ -12,7 +12,6 @@
     while($row=$info->fetch_assoc())
     			$charge[$j++]=$row["charge"];
 
-
 ?>
 
 <html>
@@ -41,6 +40,7 @@ body {
 </style>
 </head>
 <body>
+<div class="card">
 <div class="center">
 	<form action="vbook.php" method="post">
 
@@ -76,6 +76,7 @@ body {
 		<td><?php echo $charge[2] ?></td>
 	</tr>
 </table> 
+</div>
 </div>
 
 </body>
