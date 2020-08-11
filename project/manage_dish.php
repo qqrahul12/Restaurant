@@ -14,7 +14,9 @@
 	    $name = array();
 	    $price = array();
 	    $description = array();
+	    $did = array();
 	    while($row=$info->fetch_assoc()){
+	    	$did[$i] = $row["did"];
 	    	$name[$i]=$row["name"];
 	    	$price[$i] = $row["price"];
 	    	$description[$i] = $row["description"];
@@ -33,7 +35,7 @@
 	<h1>Current Menu</h1><hr>
 <?php
 	    for($j=0;$j<$i;$j++){
-	    	echo '<p class="dish-name">'.$name[$j].'</p>';
+	    	echo '<p class="dish-name">'.$did[$j]." ".$name[$j].'</p>';
 
 	    	echo '<p><span class="dish-price">Rs'.$price[$j].'</span></p>';
 	    	echo '<p class="description">'.$description[$j].'</p>'; 
