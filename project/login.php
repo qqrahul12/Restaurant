@@ -32,7 +32,7 @@ body {
 </head>
 <body>
   <div class="center">        
-      <form action="http://localhost/Restaurant/vlogin.php" method="post">
+      <form action="vlogin.php" method="post">
             
         <label for="Mobile">Mobile<br></label>
         <input class="ipt" type="text" name="mobile" id="Mobile" required >
